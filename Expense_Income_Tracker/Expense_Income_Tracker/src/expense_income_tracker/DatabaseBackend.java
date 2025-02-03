@@ -20,7 +20,7 @@ public class DatabaseBackend {
 
     public DatabaseBackend() {
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root", "Iammadhu*9");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root", "");
             System.out.println("Connected to the database.");
         } catch (SQLException e) {
             e.printStackTrace();
