@@ -40,13 +40,13 @@ public class ExpenseIncomeEntry {
             // Provide the JDBC URL, username, and password for your MySQL server
             String jdbcUrl = "jdbc:mysql://localhost:3306/mydb";
             String username = "root";
-            String password = "Iammadhu*9";
+            String password = "";
 
             // Register the JDBC driver
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             // Open a connection
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root", "Iammadhu*9");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root", "");
 
             // Prepare the SQL statement
             String sql = "INSERT INTO expense_income (date, description, amount, type) VALUES (?, ?, ?, ?)";
