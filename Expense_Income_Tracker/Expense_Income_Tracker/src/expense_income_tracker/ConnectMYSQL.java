@@ -13,13 +13,13 @@ public class ConnectMYSQL {
             // Provide the JDBC URL, username, and password for your MySQL server
             String url = "jdbc:mysql://localhost:3306/mydb";
             String username = "root";
-            String password = "Iammadhu*9";
+            String password = "";
 
             // Register the JDBC driver
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             // Create the connection
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root", "Iammadhu*9");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root", "");
 
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
